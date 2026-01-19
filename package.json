@@ -1,0 +1,21 @@
+{
+  "name": "getting-started-with-express",
+  "version": "0.0.1",
+  "description": "Back-end class assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkimhong/Getting-Started-With-Express.git"
+  },
+  "keywords": [],
+  "author": "Tiangkimhong Hoeu",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tkimhong/Getting-Started-With-Express/issues"
+  },
+  "homepage": "https://github.com/tkimhong/Getting-Started-With-Express#readme"
+}
