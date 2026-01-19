@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/tkimhong/Getting-Started-With-Express/issues"
   },
-  "homepage": "https://github.com/tkimhong/Getting-Started-With-Express#readme"
+  "homepage": "https://github.com/tkimhong/Getting-Started-With-Express#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.4"
+  }
 }
