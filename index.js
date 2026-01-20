@@ -1,5 +1,16 @@
 const express = require("express");
+const { engine } = require("express-handlebars");
 const app = express();
+
+// Configure Handlebars as view engine
+app.engine(
+  "handlebars",
+  engine({
+    defaultLayout: "main",
+  }),
+);
+
+app.set("view engine", "handlebars");
 
 // For organization purposes; it's still called at the end after actual routes
 const unknownEndpoint = (request, response) => {
