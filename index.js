@@ -21,7 +21,7 @@ const unknownEndpoint = (request, response) => {
 
 app.get("/", (request, response) => {
   response.type("text/html");
-  response.send("<h1>Di-di-di</h1>");
+  response.render("home");
 });
 
 app.get("/about", (request, response) => {
