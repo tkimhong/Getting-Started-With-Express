@@ -38,7 +38,7 @@ app.get("/about", (request, response) => {
 
 app.get("/contact", (request, response) => {
   response.type("text/html");
-  response.send("<h1>Contact page</h1>");
+  response.render("contact");
 });
 
 app.use(unknownEndpoint);
