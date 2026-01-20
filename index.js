@@ -2,6 +2,8 @@ const express = require("express");
 const { engine } = require("express-handlebars");
 const app = express();
 
+// TODO: External CSS
+
 // Configure Handlebars as view engine
 app.engine(
   "handlebars",
@@ -11,6 +13,8 @@ app.engine(
 );
 
 app.set("view engine", "handlebars");
+
+app.use(express.static(__dirname + "/public"));
 
 // For organization purposes; it's still called at the end after actual routes
 const errorHandler = (error, request, response, next) => {
