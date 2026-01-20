@@ -33,7 +33,7 @@ app.get("/", (request, response) => {
 
 app.get("/about", (request, response) => {
   response.type("text/html");
-  response.send("<h1>About page</h1>");
+  response.render("about");
 });
 
 app.get("/contact", (request, response) => {
