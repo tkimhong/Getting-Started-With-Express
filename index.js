@@ -13,8 +13,15 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // For organization purposes; it's still called at the end after actual routes
+const errorHandler = (error, request, response, next) => {
+  console.error(error.stack);
+  response.type("text/plain");
+  response.status(500);
+  response.send("500 - Internal Server Error");
+};
+
 const unknownEndpoint = (request, response) => {
-  response.type("text/html");
+  response.type("text/plain");
   response.status(404);
   response.send("404 - Not Found");
 };
@@ -35,6 +42,7 @@ app.get("/contact", (request, response) => {
 });
 
 app.use(unknownEndpoint);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
