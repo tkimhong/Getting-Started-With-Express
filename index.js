@@ -21,9 +21,10 @@ const errorHandler = (error, request, response, next) => {
 };
 
 const unknownEndpoint = (request, response) => {
-  response.type("text/plain");
+  response.type("text/html");
   response.status(404);
-  response.send("404 - Not Found");
+  response.render("404");
+  //   response.send("404 - Not Found");
 };
 
 app.get("/", (request, response) => {
