@@ -37,8 +37,34 @@ nav a:hover {
 }
 
 img {
-    max-width: 100%;
-    height: auto
+    height: auto;
+}
+
+/* Hero image */
+img[src*="jram-hero"] {
+    max-width: 800px;
+}
+
+/* Headshots */
+img[src*="headshot"] {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* GIFs medium size */
+img[src*=".gif"] {
+    max-width: 500px;
+}
+
+/* highlights */
+img[src*=".webp"],
+img[src*=".jpeg"]:not([src*="hero"]) {
+    max-width: 500px;
+}
+
+/* Header logo (small) */
+header img {
+    max-width: 300px;
 }
 
 .card {
