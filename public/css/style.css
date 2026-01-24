@@ -36,6 +36,15 @@ nav a:hover {
     color: #E31937
 }
 
+.breaking-news {
+    background-color: #0C2340;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border: 3px solid #E31937
+}
+
 img {
     height: auto;
 }
